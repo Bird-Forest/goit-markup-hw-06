@@ -394,6 +394,7 @@ button {
 .bg-icon {
   fill: currentColor;
 }
+
 /* Footer */
 .footer {
   background: var(--color-navy-blue);
@@ -404,7 +405,6 @@ button {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
-  gap: 120px;
 }
 .logo-brend-footer {
   display: inline-block;
@@ -428,9 +428,9 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-cloud);
+  margin-right: 120px;
 }
 .caption-social {
-  font-style: medium, italic;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -443,6 +443,7 @@ button {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 16px;
+  margin-right: 80px;
 }
 .foot-bg {
   width: 40px;
@@ -467,6 +468,68 @@ button {
   fill: currentColor;
 }
 
+/* Footer subscribe form  */
+
+.subscribe-form {
+  width: 453px;
+}
+.wrapper-sub {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.user-sub {
+  display: block;
+  width: 264px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+  border-radius: 4px;
+  border: 1px solid var(--color-white);
+  background-color: var(--color-navy-blue);
+  outline-style: none;
+  padding: 8px 16px;
+  margin-right: 24px;
+}
+
+.btn-sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 165px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  background-color: var(--color-iris);
+  transform: scale(1);
+  transition: transform var(--transition-duration-and-func);
+  cursor: pointer;
+  padding: 8px 24px;
+  gap: 16px;
+}
+.btn-sub-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+}
+.btn-sub-icon {
+  width: 100%;
+  height: 100%;
+  color: var(--color-white);
+}
+.btn-sub:hover,
+.btn-sub:focus {
+  transform: scale(1.05);
+}
+.btn-sub-icon {
+  fill: currentColor;
+}
 /* Modal window */
 .backdrop {
   position: fixed;
@@ -483,7 +546,6 @@ button {
   transition: opacity var(--transition-duration-and-func),
     visibility var(--transition-duration-and-func);
 }
-
 .modal {
   position: absolute;
   top: 50%;
@@ -499,7 +561,6 @@ button {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) rotate(360deg) scale(0.2);
 }
-
 .close-btn {
   position: absolute;
   top: 24px;
@@ -620,14 +681,15 @@ button {
   display: block;
   width: 16px;
   height: 16px;
-  border: 2px solid var(--color-light-slate);
+  border: 1px solid var(--color-light-slate);
   border-radius: 1px;
   background: var(--color-white);
   transition: border var(--transition-duration-and-func);
-  margin-right: 8px;
   cursor: pointer;
   content: '';
+  margin-right: 8px;
 }
+.user-agree-check:hover + .user-agree-text::before,
 .user-agree-check:focus + .user-agree-text::before {
   border: 1px solid var(--color-navy-blue);
 }
@@ -642,12 +704,9 @@ button {
   letter-spacing: 0.04em;
   color: var(--color-iris);
 }
-.btn-position {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .btn-send {
+  display: block;
   width: 169px;
   height: 56px;
   border-radius: 4px;
@@ -662,8 +721,12 @@ button {
   color: var(--color-white);
   background-color: var(--color-iris);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid transparent;
   transform: scale(1);
   transition: transform var(--transition-duration-and-func);
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
 }
 .btn-send:hover,
 .btn-send:focus {
