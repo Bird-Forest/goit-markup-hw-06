@@ -66,6 +66,7 @@ button {
   padding: 0 15px 0 15px;
   outline: 2px solid red;
 }
+
 /* Heder */
 .top {
   border-bottom: 1px solid var(--color-cornflower);
@@ -155,6 +156,7 @@ button {
 .contact-nav:focus {
   color: var(--color-ocean);
 }
+
 /* S1 Hero section */
 .hero {
   background-image: linear-gradient(
@@ -209,6 +211,7 @@ button {
 .hero-btn:focus {
   background: var(--color-ocean);
 }
+
 /* S2 Professional Sectoin */
 .prof {
   padding-top: 120px;
@@ -248,6 +251,7 @@ button {
   letter-spacing: 0.02em;
   color: var(--color-slate);
 }
+
 /* S3 Product Sectiont */
 .prod {
   padding-bottom: 120px;
@@ -267,6 +271,7 @@ button {
   justify-content: space-between;
   gap: 24px;
 }
+
 /* S4 Team Section */
 .team {
   background: var(--color-cloud);
@@ -297,7 +302,6 @@ button {
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
-
 .item-card {
   padding: 32px 0;
 }
@@ -347,6 +351,7 @@ button {
 .team-icon {
   fill: currentColor;
 }
+
 /* Customer */
 .customer {
   padding-top: 120px;
@@ -406,6 +411,9 @@ button {
   justify-content: flex-start;
   align-items: baseline;
 }
+.box-left {
+  margin-right: 120px;
+}
 .logo-brend-footer {
   display: inline-block;
   font-family: 'Raleway', sans-serif;
@@ -428,7 +436,9 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-cloud);
-  margin-right: 120px;
+}
+.box-center {
+  margin-right: 80px;
 }
 .caption-social {
   font-weight: 500;
@@ -443,7 +453,6 @@ button {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 16px;
-  margin-right: 80px;
 }
 .foot-bg {
   width: 40px;
@@ -469,7 +478,6 @@ button {
 }
 
 /* Footer subscribe form  */
-
 .subscribe-form {
   width: 453px;
 }
@@ -477,6 +485,9 @@ button {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+.user-sub-text {
+  margin-right: 24px;
 }
 .user-sub {
   display: block;
@@ -492,9 +503,7 @@ button {
   background-color: var(--color-navy-blue);
   outline-style: none;
   padding: 8px 16px;
-  margin-right: 24px;
 }
-
 .btn-sub {
   display: flex;
   flex-direction: row;
@@ -530,6 +539,7 @@ button {
 .btn-sub-icon {
   fill: currentColor;
 }
+
 /* Modal window */
 .backdrop {
   position: fixed;
@@ -576,7 +586,7 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  transition-property: background-color var(--transition-duration-and-func),
+  transition: background-color var(--transition-duration-and-func),
     color var(--transition-duration-and-func);
   cursor: pointer;
 }
@@ -590,7 +600,6 @@ button {
 }
 
 /* Modal form */
-
 .modal-title {
   font-weight: 500;
   font-size: 16px;
@@ -600,7 +609,6 @@ button {
   color: var(--color-navy-blue);
   margin-bottom: 16px;
 }
-
 .user-record {
   display: flex;
   flex-direction: column;
@@ -704,7 +712,6 @@ button {
   letter-spacing: 0.04em;
   color: var(--color-iris);
 }
-
 .btn-send {
   display: block;
   width: 169px;
@@ -732,11 +739,13 @@ button {
 .btn-send:focus {
   transform: scale(1.05);
 }
+
 /* Page Portfolio  */
 /* Heder  */
 body {
   counter-reset: var(--color-slate);
 }
+
 /* Filter Section */
 .section-portfolio {
   padding: 96px 0 120px 0;
